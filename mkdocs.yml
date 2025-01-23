@@ -43,6 +43,7 @@ nav:
     - electronique/index.md
   - Informatique:
     - informatique/index.md
+    - Documentation: informatique/doc.md
     - Raspberry Pi: informatique/raspberry.md
   - Mécanique:
     - mecanique/index.md
