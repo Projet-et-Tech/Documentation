@@ -2,11 +2,11 @@
 
 Ce site contient toute la documentation de Projet & Tech, l'association de robotique de [Télécom Saint-Étienne](https://www.telecom-st-etienne.fr/).
 
-```latex
+<script type="text/tikz">
 \begin{tikzpicture}
     \draw (0,0) circle 1cm;
 \end{tikzpicture}
-```
+</script>
 
 
 ## À faire
