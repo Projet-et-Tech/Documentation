@@ -4,10 +4,9 @@ Ce site contient toute la documentation de Projet & Tech, l'association de robot
 
 <script type="text/tikz">
 \begin{tikzpicture}
-    \draw (0,0) circle 1cm;
+  \draw[thick, ->] (0,0) -- (2,2) node[midway, above] {TikZ!};
 \end{tikzpicture}
 </script>
-
 
 ## À faire
 
