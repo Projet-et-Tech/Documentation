@@ -3,8 +3,8 @@
 Ce site contient toute la documentation de Projet & Tech, l'association de robotique de [Télécom Saint-Étienne](https://www.telecom-st-etienne.fr/).
 
 <script type="text/tikz">
-\usepackage{circuitikz}
 \begin{tikzpicture}
+\usepackage{circuitikz}
 
 \begin{circuitikz}[american, voltage shift=0.5]
 \draw (0,0)
@@ -15,6 +15,7 @@ to[R=$R_1$, i>_=$i_1$] (2,0) -- (0,0);
 to[R=$R_2$, i>_=$i_2$]
 (4,0) to[short, -*] (2,0);
 \end{circuitikz}
+\end{tikzpicture}
 
 </script>
 
