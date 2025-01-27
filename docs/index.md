@@ -3,9 +3,20 @@
 Ce site contient toute la documentation de Projet & Tech, l'association de robotique de [Télécom Saint-Étienne](https://www.telecom-st-etienne.fr/).
 
 <script type="text/tikz">
-\begin{tikzpicture}
-  \draw[thick, ->] (0,0) -- (2,2) node[midway, above] {TikZ!};
-\end{tikzpicture}
+\usepackage{circuitikz}
+\begin{document}
+
+\begin{circuitikz}[american, voltage shift=0.5]
+\draw (0,0)
+to[isource, l=$I_0$, v=$V_0$] (0,3)
+to[short, -*, i=$I_0$] (2,3)
+to[R=$R_1$, i>_=$i_1$] (2,0) -- (0,0);
+\draw (2,3) -- (4,3)
+to[R=$R_2$, i>_=$i_2$]
+(4,0) to[short, -*] (2,0);
+\end{circuitikz}
+
+\end{document}
 </script>
 
 ## À faire
