@@ -49,6 +49,8 @@ nav:
     - mecanique/index.md
   - Lore:
     - lore/index.md
+  - Documentation:
+    - documentation/doc.md
 plugins:
   - search
   - minify:
