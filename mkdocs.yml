@@ -46,6 +46,10 @@ nav:
     - Raspberry Pi: informatique/raspberry.md
   - Mécanique:
     - mecanique/index.md
+    - Projet & Tech: mecanique/projet-esperluette-tech.md
+    - Introduction à la mécanique: mecanique/introduction-mecanique.md
+    - SolidWorks: mecanique/solidworks.md
+    - Todo: mecanique/todo.md
   - Lore:
     - lore/index.md
 plugins:
