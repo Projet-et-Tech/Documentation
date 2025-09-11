@@ -1,56 +1,91 @@
-
-
-
-
-
-
-
-
 ## Fonctions - Bases (placeholder?)
+
 ## Pièces - Avancé (placeholder?)
+
 ## Assemblage
+
 ## Importer des pièces
+
 ### Téléchargements
+
 ### Circuits imprimés (PCBs)
+
 ## Relations & dépendances
+
 ### Importation d'entités
+
 ### Création d'une librairie
+
 ## Conventions
+
 ### Nommage des fichiers
+
 ### Stockage
+
 ### Unités
 
+
+
 # Impression 3D
+
 ## Astuces de modélisation
+
 ## Réglages logiciel
+
 ## Génération G-Code (slicing)
+
 ## Conventions
+
 ## Utilisation imprimante
+
 ## Matériaux
+
+
 
 # Machine CNC
+
 ## Astuces de modélisation
+
 ## Conventions
+
 ## Utilisation de CamBam
+
 ## Conventions
+
 ## Formation FabLab
+
 ## Checklist
+
 ## Matériaux
 
+
 # Mesures de sécurité
+
 ## Impression 3D
+
 ## Machine CNC
+
 ## Règles générales
 
+
+
 # Bilan de l'année
+
 ## Résumé
+
 ## Points d'amélioration
+
 ## Conclusion
 
+
 # Ressources complémentaires
+
 ## Engrenage
 
+
+
 ### Dentures imprimées en 3D
+
 [3D Printing Gears – The Ultimate Guide](https://www.youtube.com/watch?v=EhzCQHOy3yw)
 
 ### Tracé d'un profile de dent pour engrenage.  
