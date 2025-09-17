@@ -43,6 +43,9 @@ nav:
     - electronique/index.md
   - Informatique:
     - informatique/index.md
+    - Simulation avec PyBullet: informatique/simulation.md
+    - Fichiers URDF: informatique/URDF.md
+    - Traitement Images: informatique/camera.md
     - Raspberry Pi: informatique/raspberry.md
   - Mécanique:
     - mecanique/index.md
