@@ -1,10 +1,12 @@
 # Fichiers URDF (ajout d'objets dans PyBullet)
 
 ## Qu'est-ce que le format URDF ?
+
 Le format URDF (Unified Robot Description Format) est un format XML utilisé pour décrire les modèles de robots et d'objets dans des environnements de simulation comme PyBullet. Il permet de définir la géométrie, les propriétés physiques et les relations entre les différentes parties d'un robot ou d'un objet.
 
 
 ## Structure d'un fichier URDF
+
 Un fichier URDF est organisé en plusieurs sections principales :
 - **Robot** : La balise racine qui regroupe toutes les informations sur le robot ou l'objet.
 - **Link** : Définit une partie rigide du robot ou de l'objet. Chaque lien possède des propriétés comme la masse, l'inertie, la géométrie (forme et taille), la couleur, la collision, etc.
@@ -15,6 +17,7 @@ Un fichier URDF est organisé en plusieurs sections principales :
 
 
 ## Exemple de fichier URDF simple - Planche
+
 Voici un exemple de fichier URDF décrivant une planche simple :
 
 ```xml
@@ -52,6 +55,7 @@ Cette approche est suffisante pour créer des objets simples, sans textures.
 
 
 ## Exemple de fichier URDF avec texture et modèle 3D : Canette
+
 Voici un exemple de fichier URDF décrivant une canette avec une texture :
 
 ```xml
@@ -97,6 +101,7 @@ Par exemple, pour créer un modèle 3D d'une conserve, on peut utiliser un logic
 
 
 ## Exemple de fichier URDF complexe - Table de jeu
+
 Voici un exemple de fichier URDF décrivant la table de jeu avec plusieurs liens et joints :
 
 ```xml
@@ -287,6 +292,7 @@ L'utilisation de jointures permet une grande modularité : on peut ainsi modifie
 
 
 ## Chargement dans PyBullet
+
 Pour charger un fichier URDF dans PyBullet, on utilise la fonction `loadURDF` de l'API PyBullet. Voici un exemple de code pour charger la table de jeu :
 
 ```python
