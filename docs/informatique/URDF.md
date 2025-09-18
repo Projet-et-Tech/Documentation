@@ -8,6 +8,7 @@ Le format URDF (Unified Robot Description Format) est un format XML utilisé pou
 ## Structure d'un fichier URDF
 
 Un fichier URDF est organisé en plusieurs sections principales :
+
 - **Robot** : La balise racine qui regroupe toutes les informations sur le robot ou l'objet.
 - **Link** : Définit une partie rigide du robot ou de l'objet. Chaque lien possède des propriétés comme la masse, l'inertie, la géométrie (forme et taille), la couleur, la collision, etc.
 - **Joint** : Définit la connexion entre deux liens, en précisant le type de joint (`fixe`, `revolute`, `prismatic`, etc.) et les limites de mouvement.
