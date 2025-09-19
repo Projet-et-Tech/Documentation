@@ -10,6 +10,14 @@ La norme ISO est un ensemble de standards techniques publiés par l'Organisation
 
 En Europe, la norme ISO domine. Il est donc conseiller de se baser dessus à Projet&Tech. Il est possible d'utiliser différentes normes pour les différents domaines électronique/mécanique, et ce n'est pas forcément bloquant.
 
+### Moment ou Couple
+
+On parle généralement de **moment** d'une force, car on cherche à calculer un bras de levier. Ce calcul dépend de la position de référence utilisé. Un moment associe donc un couple à une position dans l'espace.
+
+Un **couple** en revanche ne dépend pas d'une position dans l'espace. Il provient donc des résultats de calculs après avoir considérer plusieurs moments, ou alors directement d'une sortie en rotation comme celle d'un axe moteur. On peut aussi parler de "moment résultant"
+
+Cependant, ce sont des grandeurs homogène; il faut seulement vérifier le(s) point(s) d'application si on utilise des moments dans des calculs.
+
 ### Visserie
 
 Il y a beaucoup de choses à dire sur les vis. En effet, il existe des livres de plusieurs centaines de pages, et de plusieurs volumes parlant des vis et de leur dimensionnement. Cette section aborde les notions fondamentales.
@@ -22,6 +30,31 @@ Tout d'abord, il est important de différencier les différents éléments assoc
 - **Écrou** (EN - nut)  
 - **Boulon** (EN - bolt)  
     Ensemble vis + écrou
+
+Il existe différentes catégorie de vis :
+
+- **Vis d'assemblage**
+
+    Vis classique avec une partie fileté/taraudé, nécessitant un écrou pour être maintenu en place.
+
+    La pression est exercée par la tête de la vis (ou l'écrou) sur la matière.
+
+- **Vis de pression / de fixation**
+
+    Vis ne nécessitant pas d'écrou. Peut généralement être directement vissé dans un matériau.
+
+    La pression est exercée par le filatefe de la vis sur la matière.
+
+    Un exemple répandu est les vis à bois.
+
+    Il existe d'autres type de vis spécifiques à des applications bien particulière, comme les vis auto-taraudeuse, auto-foreuse, à molette, etc... 
+    Normalement, elles ne sont pas utilisées en robotique.
+
+!!! tip Remarque
+
+    Il n'y a pas de nom spécial pour la "partie filetée qui dépasse" d'une vis à travers un matériau. Dans un domaine technique on parlerait de "filetage saillant" ou de "bout de vis saillant", mais on peut aussi parler de "queue de vis" ou de "bout de vis".
+
+#### Écrous
 
 Il existe différents type d'écrou :
 
@@ -49,27 +82,13 @@ Il existe différents type d'écrou :
 
     (à noter: il est obligatoire d'en utiliser pour stabiliser le mat de balise à la Coupe (2025))
 
-Et différents type de vis :
-
-- **Vis d'assemblage**
-
-    Vis classique avec une partie fileté/taraudé, nécessitant un écrou pour être maintenu en place.
-
-- **Vis de fixation**
-
-    Vis ne nécessitant pas d'écrou. Peut généralement être directement vissé dans un matériau.
-
-    Un exemple répandu est les vis à bois.
-
-Il existe d'autres type de vis spécifiques à des applications bien particulière, comme les vis auto-taraudeuse, auto-foreuse, à molette, etc... Normalement, elles ne sont pas utilisées en robotique.
-
 #### Tête de vis
 
 Il y a 2 choses qui vont caractériser les différentes têtes de vis. La forme de la tête, et la forme de l'encoche.
 
 **Le type de tête de vis :**
 
-![vue latérale des différentes têtes de vis](figures/teteVis.png)
+![image vue latérale des différentes têtes de vis](figures/teteVis.png)
 
 dans l'ordre :
 
@@ -80,7 +99,7 @@ dans l'ordre :
 
 Il existe aussi des vis sans encoche, le contour extérieur - généralement hexagonal - permet alors le serrage. On les appelle vis à entraînement externe.
 
-![vue latérale d'une vis hexagonale](figures/teteVis2.png)
+![image vue latérale d'une vis hexagonale](figures/teteVis2.png)
 
 Vue d'une vis à tête hexagonale "vis hexagonale", à entraînement externe.
 
@@ -90,6 +109,8 @@ Vue d'une vis à tête hexagonale "vis hexagonale", à entraînement externe.
 - Cruciforme (ou Philips)
 - Hexagonale creux (ou Allen)
 - Étoilée (ou Torx)
+
+[TODO - Ajouter une image]
 
 Il existe beaucoup de type et de forme de tête de vis. Ceux non présenté s'apparente à une catégorie déjà existante, ou sont rares.
 
@@ -118,6 +139,27 @@ Pour un matériau mou, un taraudage par déformation est recommandé, car plus l
 Il existe des couples recommandés pour effectuer un taraudage, selon des tailles de trous différents.
 
 Par convention, un filetage est toujours droit; c'est à dire qu'on serre en tournant dans le sens horaire. Les filetages gauches sont très rares, et donc toujours indiqué.
+
+#### En Pratique
+
+Il y as plusieurs choses à prendre en considérations lorsque l'on choisit une vis. Evidemment, il faut faire attention à la dimension.
+
+!!! note
+    Ne pas se fier aux dimensions indiquer sur les emballages, on ne sais pas à quelle partie de la vis correspondent ces mesures. Il y a possiblement des variations (~ 1mm max) surtout sur la longueur de la vis.
+
+Mais l'autre chose à choisir c'est le type de vis utilisé. Si on souhaite serrer des composants dans du plastique, on peut utiliser une tête fraisé, grâce à sa forme en cône elle peut aider à stabiliser la tête de vis en place. De plus, on peu choisir d'enfoncer ou non la vis ce qui permet ajuster légèrement la longueur du bout qui dépasse.
+
+À Projet&Tech, on a beaucoup de vis fraisée cruciforme, car la forme fraisée est avantageuse et que les têtes cruciforme sont généralement utilisées pour les vis fraisée.  
+Voici ce qu'il faut savoir sur les encoches cruciforme :
+
+- le négatif  
+ Pour les encoches cruciforme ou fendue, le tournevis à tendance à ripper.  
+ Pour les vis cruciforme, l'encoche de la vis à tendance à se dégrader rapidement si le tournevis n'est pas à la bonne taille ou si on serre trop.
+
+- le positif  
+  Le type de vis est très répendu, c'est facile de trouver du matériel; il y en avais aussi déjà beaucoup à Projet&Tech.  
+  Un tournevis est plus pratique pour visser dans des zones confinés que les clés Allen.  
+  On ne peut pas trop serrer les vis cruciforme, donc cela permet d'avoir un couple de serrage raisonnable.
 
 ### Engrenages
 
@@ -152,7 +194,7 @@ Il existe aussi des normes pour les dimensions d'engrenage (norme ISO par exempl
 
     Engrenage droit :
 
-    ![Image d'un engrenage droit](figures/engrenageDroit.png)  
+    ![image d'un engrenage droit](figures/engrenageDroit.png)  
 
 - **Pignon**
 
@@ -164,7 +206,7 @@ Il existe aussi des normes pour les dimensions d'engrenage (norme ISO par exempl
 
     Pignon-Crémaillère
 
-    ![Image d'un ensemble pignon-crémaillère](figures/cremaillere.png)  
+    ![image d'un ensemble pignon-crémaillère](figures/cremaillere.png)  
 
 - **Couronne**
 
@@ -176,7 +218,7 @@ Il existe aussi des normes pour les dimensions d'engrenage (norme ISO par exempl
 
     Pignon-Couronne
 
-    ![Image d'un ensemble pignon-couronne](figures/couronne.png)  
+    ![image d'un ensemble pignon-couronne](figures/couronne.png)  
 
 - **Train d'engrenages**
 
@@ -202,7 +244,7 @@ Il existe aussi des normes pour les dimensions d'engrenage (norme ISO par exempl
 
 Avant de passer à la suite, il est important de comprendre comment se déplace le point de contact sur une roue dentée.
 
-![déplacement du point de contact sur une roue dentée](figures/involute_wheel.gif)
+![image déplacement du point de contact sur une roue dentée](figures/Involute_wheel.gif)
 
 Dans le cas d'un engrenage parallèle à denture droite, le point de contact se déplace selon une droite. C'est dans ce cas présent que le vocabulaire suivant est le mieux défini.
 
@@ -453,9 +495,9 @@ Pour la section allant du cercle de pied jusqu'au cercle de base, si il y a suff
  
 On parle surplomb (FR) ou d'undercut (EN)
 
-!!! example "Avec roue rouge surplombée"
+!!! example "Engrenage avec roue rouge surplombée"
 
-    ![schéma montrant un engrenage surplombé](figures/undercut.png)
+    ![image schéma montrant un engrenage surplombé](figures/undercut.png)
 
 Il se pose aussi la question de comment introduire un jeu. Un effet, un tel assemblage est sur-contraint/hyperstatique.  
 Typiquement, on commence par calculer/fixer la distance entre-axe de jeu maximale. Ce qui nous permet ensuite de calculer $Z_\text{min}$  
@@ -463,7 +505,7 @@ Voir [annexe](#cours-engrenage) (Involute Gears 3: Contact Ratio).
 
 Pour une crémaillère, qui peut être vue comme un engrenage de rayon infini, la courbe involute se transforme en une droite (zoom infini). Cette droite est incliné selon l'angle de pression, mesuré par rapport à une direction radiale, passant par le point de rebroussement. Les dents sont donc triangulaire.
 
-![fabrication des dents d'une roue par une crémaillère](figures/Profile_shift.gif) 
+![image fabrication des dents d'une roue par une crémaillère](figures/Profile_shift.gif) 
 
 Cette propriété permet une manière peu coûteuse de fabriquer des roues dentées, grâce à l'utilisation de crémaillères. Pour un outil, on doit définir le module $m$ et l'angle de pression $\alpha$. Si on fixe $\alpha = 20°$, et qu'on choisit un module parmi les modules normalisés, alors le nombre d'outil nécessaire pour couvrir une norme est raisonnable.
 
@@ -487,7 +529,7 @@ Il y a 3 grosse catégorie d'engrenage :
 
     !!! example
 
-    	engrenage à denture droite
+    	engrenage à denture droite, hélicoïdale, à double hélice, etc...
 
 - **Engrenages concourants** (les axes de rotation se croisent)
 
@@ -499,11 +541,11 @@ Il y a 3 grosse catégorie d'engrenage :
 
     ex : roue et vis sans fin
 
-    ![schéma roue et vis sans fin](figures/roueVisSansFin.jpg) 
+    ![image schéma roue et vis sans fin](figures/roueVisSansFin.jpg) 
 
     !!! note
         
-	Un ensemble "roue et vis sans fin" / "engrenage à vis" (FR) ou "wormgear" (EN) ne peut transmettre de la puissance que dans le sens $\text{vis} \rArr \text{roue}$. Il est très difficile de transmettre la puissance dans le sens $\text{roue} \rArr \text{vis}$. Cependant, il existe des système avec des billes pour réduire les frottements, et le rendre inversible.
+        Un ensemble "roue et vis sans fin" / "engrenage à vis" (FR) ou "wormgear" (EN) ne peut transmettre de la puissance que dans le sens $\text{vis} \rArr \text{roue}$. Il est très difficile de transmettre la puissance dans le sens $\text{roue} \rArr \text{vis}$. Cependant, il existe des système avec des billes pour réduire les frottements, et le rendre inversible.
 
 Comme la crémaillère est considéré comme une roue de rayon infinie, une liaison pignon-crémaillère classique correspond à une liaison en parallèle.
 
@@ -513,7 +555,7 @@ Il existe des cas particuliers car ils correspondent à aucune ou à plusieurs c
 
 Les dentures fonctionnent avec les 3 catégories d'engrenages. Les plus simples sont généralement utilisé dans des liaisons non-droites, plus complexes à fabriquer.
 
-![schéma roue et vis sans fin](figures/engrenageDenture.png)
+![image schéma roue et vis sans fin](figures/engrenageDenture.png)
 
 Dans le même ordre, on retrouve :
 
@@ -539,7 +581,7 @@ En impression 3D, une denture droite peut avoir un meilleur rendement que les au
 
     Les engrenages à fuseaux ont un pignon lanterne, et une deuxième roue appelé "rouet". Le rouet à des dents cylindre, qui engrènent avec des encoches à l'intérieur de la lanterne.
 
-    ![exemple de lanterne et grand rouet](figures/lanterneGrandRouet.jpg) 
+    ![image exemple de lanterne et grand rouet](figures/lanterneGrandRouet.jpg) 
 
     > Il ne faut pas confondre les engrenages à denture intérieure avec les engrenages à fuseaux.
 
@@ -611,7 +653,7 @@ Le train épicycloïdal est un cas d'étude intéressant :
 - L'axe de rotation en entrée et en sortie est le même.
 - Facile à utiliser dans une structure en étage.
 
-![animation d'un train épicycoïdal](figures/planetaryGear.gif)
+![image animation d'un train épicycoïdal](figures/planetaryGear.gif)
 
 Il est composé des éléments :
 
@@ -674,7 +716,7 @@ La dynamique combine les notions de mouvement (cinématique) et les forces (stat
 La méthode énergétique consiste à analyser les systèmes mécaniques à partir des grandeurs globales que sont le travail, la puissance et l'énergie (cinétique, potentielle, dissipée). Elle repose sur le théorème de l'énergie cinétique et le théorème de la puissance. Elle permet d'aborder des systèmes complexes sans passer systématiquement par l'analyse interne des forces.
 
 
-#### Liaisons possibles
+#### Liaisons possibles (TODO)
 
 Contenu adapté de la page Wikipédia :  
 [Liaison mécanique — Wikipédia](https://fr.wikipedia.org/wiki/Liaison_(m%C3%A9canique)), section "Tableau des liaisons parfaites". (07/2025)
@@ -688,7 +730,7 @@ Colomne 1 | Colomne 2
 
 
 ##### Ponctuelle (contact sphère-plan)
-![Sphère-plan](figures/Liaison_ponctuelle.png)
+![image Sphère-plan](figures/liaison_ponctuelle.png)
 
 Torseur cinématique :
 $$
@@ -709,7 +751,7 @@ Z & 0
 $$
 
 ##### Rectiligne (contact cylindre-plan)
-![Cylindre-plan](figures/Liaison_rectiligne.png)
+![image ylindre-plan](figures/liaison_rectiligne.png)
 
 Torseur cinématique :
 $$
@@ -730,7 +772,7 @@ Z & 0
 $$
 
 ##### Annulaire (contact sphère-cylindre)
-![Sphère-cylindre](figures/Liaison_annulaire.png)
+![image Sphère-cylindre](figures/liaison_annulaire.png)
 
 Torseur cinématique :
 $$
@@ -751,7 +793,7 @@ Z & 0
 $$
 
 ##### Rotule (contact sphère-sphère)
-![Rotule](figures/Liaison_rotule.png)
+![image Rotule](figures/liaison_rotule.png)
 
 Torseur cinématique :
 $$
@@ -772,7 +814,7 @@ Z & 0
 $$
 
 ##### Rotule à doigt (bloquée en z)
-![Rotule à doigt](figures/Liaison_rotuleDoigt.png)
+![image Rotule à doigt](figures/liaison_rotuleDoigt.png)
 
 Torseur cinématique :
 $$
@@ -793,7 +835,7 @@ Z & N
 $$
 
 ##### Pivot-glissant (contact cylindre-cylindre)
-![Pivot-glissant](figures/Liaison_pivotGlissant.png)
+![image Pivot-glissant](figures/liaison_pivotGlissant.png)
 
 Torseur cinématique :
 $$
@@ -814,7 +856,7 @@ Z & N
 $$
 
 ##### Pivot
-![Pivot](figures/Liaison_pivot.png)
+![image Pivot](figures/liaison_pivot.png)
 
 Torseur cinématique :
 $$
@@ -835,7 +877,7 @@ Z & 0
 $$
 
 ##### Glissière
-![Glissière](figures/Liaison_glissiere.png)
+![image Glissière](figures/liaison_glissiere.png)
 
 Torseur cinématique :
 $$
@@ -856,7 +898,7 @@ Z & N
 $$
 
 ##### Hélicoïdale
-![Hélicoïdale](figures/Liaison_helicoidale.png)
+![image Hélicoïdale](figures/liaison_helicoidale.png)
 
 Torseur cinématique :
 $$

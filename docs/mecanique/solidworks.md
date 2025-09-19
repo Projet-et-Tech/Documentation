@@ -92,3 +92,29 @@ Si vous scrollez un peu vous aurez aussi :
 "*Apparence de l'arrière-plan*".  
 Si vous souhaitez utiliser un thème autre que *clair*, vous ne pourrez pas utiliser l'arrière plan de la scène par défaut. Cependant, il est recommander de ne pas changer l'arrière plan de la scène car c'est parfois enregistré dans le fichier et ça peut être gênant pour les autres.  
 Je conseille donc de choisir une couleur unie (adapté pour faire des captures d'écrans) ou alors un dégradé. Vous pouvez aussi utiliser une image de fond customisé.
+
+## Fonctions - Bases (placeholder?)
+
+## Pièces - Avancé (placeholder?)
+
+## Assemblage
+
+## Importer des pièces
+
+### Téléchargements
+
+### Circuits imprimés (PCBs)
+
+## Relations & dépendances
+
+### Importation d'entités
+
+### Création d'une librairie
+
+## Conventions
+
+### Nommage des fichiers
+
+### Stockage
+
+### Unités
