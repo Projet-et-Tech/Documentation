@@ -1,31 +1,3 @@
-## Fonctions - Bases (placeholder?)
-
-## Pièces - Avancé (placeholder?)
-
-## Assemblage
-
-## Importer des pièces
-
-### Téléchargements
-
-### Circuits imprimés (PCBs)
-
-## Relations & dépendances
-
-### Importation d'entités
-
-### Création d'une librairie
-
-## Conventions
-
-### Nommage des fichiers
-
-### Stockage
-
-### Unités
-
-
-
 # Impression 3D
 
 ## Astuces de modélisation
