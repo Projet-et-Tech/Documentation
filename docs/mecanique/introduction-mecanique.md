@@ -796,7 +796,7 @@ $$
 ![image Rotule](figures/liaison_rotule.png)
 
 Torseur cinématique :
-$$\begin{bmatrix}\omega_x & 0 \\ \omega_y & 0 \\ \omega_z & 0 \end{bmatrix}_A$$
+$\begin{bmatrix}\omega_x & 0 \\ \omega_y & 0 \\ \omega_z & 0 \end{bmatrix}_A$
 
 Torseur des actions mécaniques :
 $$
