@@ -797,11 +797,11 @@ $$
 
 Torseur cinématique :
 $$
-\begin{Bmatrix}
+\begin{pmatrix}
 \omega_x & 0 \\
 \omega_y & 0 \\
 \omega_z & 0
-\end{Bmatrix}_A
+\end{pmatrix}_A
 $$
 
 Torseur des actions mécaniques :
