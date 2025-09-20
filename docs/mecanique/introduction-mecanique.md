@@ -733,64 +733,28 @@ Colomne 1 | Colomne 2
 ![image Sphère-plan](figures/liaison_ponctuelle.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & v_x \\
-\omega_y & v_y \\
-\omega_z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}\omega_x & v_x \\\omega_y & v_y \\\omega_z & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-0 & 0 \\
-Z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & 0 \\0 & 0 \\Z & 0\end{bmatrix}_M$
 
 ##### Rectiligne (contact cylindre-plan)
 ![image ylindre-plan](figures/liaison_rectiligne.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & v_x \\
-0 & v_y \\
-\omega_z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}\omega_x & v_x \\0 & v_y \\\omega_z & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-0 & M \\
-Z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & 0 \\0 & M \\Z & 0\end{bmatrix}_M$
 
 ##### Annulaire (contact sphère-cylindre)
 ![image Sphère-cylindre](figures/liaison_annulaire.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & v_x \\
-\omega_y & 0 \\
-\omega_z & 0
-\end{Bmatrix}_C
-$$
+$\begin{bmatrix}\omega_x & v_x \\\omega_y & 0 \\\omega_z & 0\end{bmatrix}_C$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-Y & 0 \\
-Z & 0
-\end{Bmatrix}_C
-$$
+$\begin{bmatrix}0 & 0 \\Y & 0 \\Z & 0\end{bmatrix}_C$
 
 ##### Rotule (contact sphère-sphère)
 ![image Rotule](figures/liaison_rotule.png)
@@ -799,136 +763,58 @@ Torseur cinématique :
 $\begin{bmatrix}\omega_x & 0 \\ \omega_y & 0 \\ \omega_z & 0 \end{bmatrix}_A$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-X & 0 \\
-Y & 0 \\
-Z & 0
-\end{Bmatrix}_A
-$$
+$\begin{bmatrix}X & 0 \\Y & 0 \\Z & 0\end{bmatrix}_A$
 
 ##### Rotule à doigt (bloquée en z)
 ![image Rotule à doigt](figures/liaison_rotuleDoigt.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & 0 \\
-\omega_y & 0 \\
-0 & 0
-\end{Bmatrix}_C
-$$
+$\begin{bmatrix}\omega_x & 0 \\\omega_y & 0 \\0 & 0\end{bmatrix}_C$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-X & 0 \\
-Y & 0 \\
-Z & N
-\end{Bmatrix}_C
-$$
+$\begin{bmatrix}X & 0 \\Y & 0 \\Z & N\end{bmatrix}_C$
 
 ##### Pivot-glissant (contact cylindre-cylindre)
 ![image Pivot-glissant](figures/liaison_pivotGlissant.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & v_x \\
-0 & 0 \\
-0 & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}\omega_x & v_x \\0 & 0 \\0 & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-Y & M \\
-Z & N
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & 0 \\Y & M \\Z & N\end{bmatrix}_M$
 
 ##### Pivot
 ![image Pivot](figures/liaison_pivot.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-0 & 0 \\
-\omega_z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & 0 \\0 & 0 \\\omega_z & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-X & L \\
-Y & M \\
-Z & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}X & L \\Y & M \\Z & 0\end{bmatrix}_M$
 
 ##### Glissière
 ![image Glissière](figures/liaison_glissiere.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-0 & v_x \\
-0 & 0 \\
-0 & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & v_x \\0 & 0 \\0 & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-0 & L \\
-Y & M \\
-Z & N
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}0 & L \\Y & M \\Z & N\end{bmatrix}_M$
 
 ##### Hélicoïdale
 ![image Hélicoïdale](figures/liaison_helicoidale.png)
 
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-\omega_x & p \cdot \omega_x \\
-0 & 0 \\
-0 & 0
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}\omega_x & p \cdot \omega_x \\0 & 0 \\0 & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-X & p \cdot X \\
-Y & M \\
-Z & N
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}X & p \cdot X \\Y & M \\Z & N\end{bmatrix}_M$
 
 ##### Encastrement
 Torseur cinématique :
-$$
-\begin{Bmatrix}
-0 & 0 \\
-0 & 0 \\
-0 & 0
-\end{Bmatrix}_M
-$$
+$\begin{Bmatrix}0 & 0 \\0 & 0 \\0 & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
-$$
-\begin{Bmatrix}
-X & L \\
-Y & M \\
-Z & N
-\end{Bmatrix}_M
-$$
+$\begin{bmatrix}X & L \\Y & M \\Z & N\end{bmatrix}_M$
 
 #### Théorie des mécanismes
