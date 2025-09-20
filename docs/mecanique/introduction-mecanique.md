@@ -812,7 +812,7 @@ $\begin{bmatrix}X & p \cdot X \\Y & M \\Z & N\end{bmatrix}_M$
 
 ##### Encastrement
 Torseur cinématique :
-$\begin{Bmatrix}0 & 0 \\0 & 0 \\0 & 0\end{bmatrix}_M$
+$\begin{bmatrix}0 & 0 \\0 & 0 \\0 & 0\end{bmatrix}_M$
 
 Torseur des actions mécaniques :
 $\begin{bmatrix}X & L \\Y & M \\Z & N\end{bmatrix}_M$
