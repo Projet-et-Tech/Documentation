@@ -40,31 +40,31 @@ theme:
     - content.code.select
 nav:
   - Base Roulante:
-      - base_roulante/index.md
-      - Outils: base_roulante/outils.md
-      - STM32CubeIDE: base_roulante/stm32cubeide.md
+      - base-roulante/index.md
+      - Outils: base-roulante/outils.md
+      - STM32CubeIDE: base-roulante/stm32cubeide.md
       - Essentiels:
-          - Constantes Globales: base_roulante/constantes.md
-          - Interruptions: base_roulante/interruptions.md
-          - Communications: base_roulante/communications.md
+          - Constantes Globales: base-roulante/constantes.md
+          - Interruptions: base-roulante/interruptions.md
+          - Communications: base-roulante/communications.md
       - Capteurs & Actionneurs:
-          - Moteurs: base_roulante/moteurs.md
-          - Encodeurs: base_roulante/encodeurs.md
+          - Moteurs: base-roulante/moteurs.md
+          - Encodeurs: base-roulante/encodeurs.md
           - IMU:
-              - MPU-6050: base_roulante/imu.md
-              - AltIMU-10 v4: base_roulante/altimu.md
+              - MPU-6050: base-roulante/imu.md
+              - AltIMU-10 v4: base-roulante/altimu.md
       - Asservissement:
-          - Introduction: base_roulante/asservissement.md
-          - Odométrie: base_roulante/odometrie.md
-          - PID: base_roulante/pid.md
-          - Point à Point: base_roulante/deplacements.md
-          - Trajet et Trajectoires: base_roulante/trajectoires.md
-          - Profil de vitesse: base_roulante/profil-vitesse.md
+          - Introduction: base-roulante/asservissement.md
+          - Odométrie: base-roulante/odometrie.md
+          - PID: base-roulante/pid.md
+          - Point à Point: base-roulante/deplacements.md
+          - Trajet et Trajectoires: base-roulante/trajectoires.md
+          - Profil de vitesse: base-roulante/profil-vitesse.md
       - Annexes:
-          - Système de logs: base_roulante/logs.md
-          - Utilitaires: base_roulante/utilitaires.md
-          - Fusion de capteurs: base_roulante/fusion.md
-          - Strategie: base_roulante/strategie.md
+          - Système de logs: base-roulante/logs.md
+          - Utilitaires: base-roulante/utilitaires.md
+          - Fusion de capteurs: base-roulante/fusion.md
+          - Strategie: base-roulante/strategie.md
   - Électronique:
       - electronique/index.md
   - Informatique:
