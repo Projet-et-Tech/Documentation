@@ -13,9 +13,20 @@ Cette documentation utilise [mkdocs](https://www.mkdocs.org/) avec le thème [mk
 - Blocs de codes colorées automatiquement
 - Rendu d'équations mathématiques grace à KaTeX
 - Abbréviations
+- figures tikz.
+
+### Usage de tikz: 
+```
+<script type="text/tikz">
+\begin{tikzpicture}
+  \draw[thick, ->] (0,0) -- (2,2) node[midway, above] {TikZ!};
+\end{tikzpicture}
+</script>
+```
 
 # Principes de rédaction
 
 - Éviter les images autant que possible, ça prend de la place et ça diminue l'accessibilité (typiquement pas de capture d'écran pour une configuration de logiciel, retranscrire en texte).
 - Ne pas créer de page directement dans `./docs/`. Pour rester organisé, la créer dans la catégorie adéquate (élec, info, méca) ou ajouter le contenu voulu dans une nouvelle section de `./docs/index.md`.
 - Vérifier l'orthographe, c'est moche une documentation mal écrite.
+
