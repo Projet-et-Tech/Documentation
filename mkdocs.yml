@@ -39,6 +39,7 @@ theme:
     - content.code.annotate
     - content.code.select
 nav:
+  - Accueil: index.md
   - Base Roulante:
       - base-roulante/index.md
       - Outils: base-roulante/outils.md
