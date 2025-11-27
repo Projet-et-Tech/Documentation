@@ -1,5 +1,4 @@
 site_name: BiblioTech
-site_url: https://documentation-9908be.gitlab.io/
 theme:
   name: material
   language: fr
@@ -31,32 +30,60 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.indexes
+    - navigation.expand
     - search.suggest
     - navigation.footer
     - content.action.edit
     - content.action.view
     - content.code.copy
     - content.code.annotate
+    - content.code.select
 nav:
-  - Accueil: index.md
+  - Base Roulante:
+      - base-roulante/index.md
+      - Outils: base-roulante/outils.md
+      - STM32CubeIDE: base-roulante/stm32cubeide.md
+      - Essentiels:
+          - Constantes Globales: base-roulante/constantes.md
+          - Interruptions: base-roulante/interruptions.md
+          - Communications: base-roulante/communications.md
+      - Capteurs & Actionneurs:
+          - Moteurs: base-roulante/moteurs.md
+          - Encodeurs: base-roulante/encodeurs.md
+          - IMU:
+              - MPU-6050: base-roulante/imu.md
+              - AltIMU-10 v4: base-roulante/altimu.md
+      - Asservissement:
+          - Introduction: base-roulante/asservissement.md
+          - Odométrie: base-roulante/odometrie.md
+          - PID: base-roulante/pid.md
+          - Point à Point: base-roulante/deplacements.md
+          - Trajet et Trajectoires: base-roulante/trajectoires.md
+          - Profil de vitesse: base-roulante/profil-vitesse.md
+      - Annexes:
+          - Système de logs: base-roulante/logs.md
+          - Utilitaires: base-roulante/utilitaires.md
+          - Fusion de capteurs: base-roulante/fusion.md
+          - Strategie: base-roulante/strategie.md
   - Électronique:
-    - electronique/index.md
+      - electronique/index.md
   - Informatique:
-    - informatique/index.md
-    - Simulation avec PyBullet: informatique/simulation.md
-    - Fichiers URDF: informatique/URDF.md
-    - Traitement Images: informatique/camera.md
-    - Raspberry Pi: informatique/raspberry.md
+      - informatique/index.md
+      - Simulation avec PyBullet: informatique/simulation.md
+      - Fichiers URDF: informatique/URDF.md
+      - Traitement Images: informatique/camera.md
+      - Raspberry Pi: informatique/raspberry.md
   - Mécanique:
-    - mecanique/index.md
-    - Projet & Tech: mecanique/projet-esperluette-tech.md
-    - Introduction à la mécanique: mecanique/introduction-mecanique.md
-    - SolidWorks: mecanique/solidworks.md
-    - Todo: mecanique/todo.md
+      - mecanique/index.md
+      - Projet & Tech: mecanique/projet-esperluette-tech.md
+      - Introduction à la mécanique: mecanique/introduction-mecanique.md
+      - SolidWorks: mecanique/solidworks.md
+      - Todo: mecanique/todo.md
   - Lore:
-    - lore/index.md
+      - lore/index.md
 plugins:
   - search
+  - callouts
   - minify:
       minify_html: true
 extra:
@@ -72,6 +99,7 @@ extra:
       name: GitHub
 copyright: Copyright &copy; 2025 Projet & Tech
 markdown_extensions:
+  - nl2br
   - abbr
   - admonition
   - def_list
@@ -86,8 +114,17 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.details
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.arithmatex:
       generic: true
 extra_javascript:
